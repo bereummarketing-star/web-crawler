@@ -1,0 +1,18 @@
+{
+  "domain": "oraeorae-project.co.kr",
+  "capability": "static",
+  "fetcher_type": "Fetcher",
+  "antibot_type": "none",
+  "antibot_strategy": "none",
+  "site_type": "static",
+  "selectors": {
+    "info_table": ".xans-product-detail .infoArea table tr (th/td)",
+    "options": ".infoArea select[id^=product_option_id] option",
+    "detail_images": "#prdDetail img",
+    "reviews": ".xans-product-review table tbody tr"
+  },
+  "pagination": {},
+  "api_endpoints": [],
+  "notes": "Cafe24 스킨, 상품 페이지 SSR HTML — plain_get 1단으로 충분. 가격/옵션/배송은 .infoArea 표, 상품번호·판매가는 og/product 메타와 ld+json(Product). 상세 설명은 이미지뿐(성분표 텍스트 없음). 후기 목록은 공개, 작성자는 마스킹, 본문은 글 페이지 별도.",
+  "last_used": "2026-11-05"
+}
